@@ -33,6 +33,13 @@ endif
 # Bootanimation
 $(call inherit-product, vendor/aosp/config/bootanimation.mk)
 
+# Blur properties
+ifeq ($(TARGET_USES_BLUR), true)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+endif
+
 # Common Overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/aosp/overlay/common
