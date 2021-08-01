@@ -204,6 +204,8 @@ PRODUCT_PACKAGES += \
 # Selinux
 SELINUX_IGNORE_NEVERALLOWS ?= false
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+
 # StichImage
 #PRODUCT_PACKAGES += \
 #    StitchImage
