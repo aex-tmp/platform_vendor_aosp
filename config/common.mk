@@ -132,6 +132,9 @@ PRODUCT_PACKAGES += \
     mkfs.exfat \
     mkfs.f2fs \
     fsck.f2fs \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs \
     fibmap.f2fs \
     7z \
     bash \
